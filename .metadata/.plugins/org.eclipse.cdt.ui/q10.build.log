@@ -1,0 +1,32 @@
+14:14:49 **** Build of configuration Debug for project q10 ****
+make all 
+Building file: ../q10.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"q10.d" -MT"q10.o" -o "q10.o" "../q10.c"
+Finished building: ../q10.c
+ 
+Building file: ../q110.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"q110.d" -MT"q110.o" -o "q110.o" "../q110.c"
+Finished building: ../q110.c
+ 
+Building target: q10
+Invoking: GCC C Linker
+gcc  -o "q10"  ./q10.o ./q110.o   
+/usr/bin/ld: ./q110.o:/root/sem3_1097/DATA-STRUTURE/AAS_1/q10/Debug/../q110.c:12: multiple definition of `top'; ./q10.o:/root/sem3_1097/DATA-STRUTURE/AAS_1/q10/Debug/../q10.c:12: first defined here
+/usr/bin/ld: ./q110.o: in function `push':
+/root/sem3_1097/DATA-STRUTURE/AAS_1/q10/Debug/../q110.c:15: multiple definition of `push'; ./q10.o:/root/sem3_1097/DATA-STRUTURE/AAS_1/q10/Debug/../q10.c:15: first defined here
+/usr/bin/ld: ./q110.o: in function `pop':
+/root/sem3_1097/DATA-STRUTURE/AAS_1/q10/Debug/../q110.c:32: multiple definition of `pop'; ./q10.o:/root/sem3_1097/DATA-STRUTURE/AAS_1/q10/Debug/../q10.c:32: first defined here
+/usr/bin/ld: ./q110.o: in function `peep':
+/root/sem3_1097/DATA-STRUTURE/AAS_1/q10/Debug/../q110.c:47: multiple definition of `peep'; ./q10.o:/root/sem3_1097/DATA-STRUTURE/AAS_1/q10/Debug/../q10.c:47: first defined here
+/usr/bin/ld: ./q110.o: in function `display':
+/root/sem3_1097/DATA-STRUTURE/AAS_1/q10/Debug/../q110.c:58: multiple definition of `display'; ./q10.o:/root/sem3_1097/DATA-STRUTURE/AAS_1/q10/Debug/../q10.c:58: first defined here
+/usr/bin/ld: ./q110.o: in function `main':
+/root/sem3_1097/DATA-STRUTURE/AAS_1/q10/Debug/../q110.c:66: multiple definition of `main'; ./q10.o:/root/sem3_1097/DATA-STRUTURE/AAS_1/q10/Debug/../q10.c:66: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [makefile:42: q10] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+14:14:49 Build Failed. 12 errors, 0 warnings. (took 342ms)
+
